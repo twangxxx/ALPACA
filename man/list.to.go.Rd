@@ -19,6 +19,3 @@ A table whose rows represent enriched GO terms (p_adj<0.05) and columns describe
 \description{
 GO term enrichment is run using the GOstats package, and corrected for multiple testing using the Benjamini-Hochberg method.
 }
-\examples{
-list.to.go()
-}
