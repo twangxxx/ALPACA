@@ -11,9 +11,6 @@ Depends: R (>= 3.2.2),
 	condor,
 	GO.db,
 Remotes: jplatig/condor,
-	 bioc::3.9/GOstats,
-	 bioc::3.9/org.Hs.eg.db,
-	 bioc::3.9/GO.db,
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
