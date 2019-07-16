@@ -4,16 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: R (>= 3.2.2),
-	Matrix,
-	igraph,
-	GOstats,
-	org.Hs.eg.db,
-	condor,
-	GO.db,
-Remotes: jplatig/condor,
-	 bioc::3.9/GOstats,
-	 bioc::3.9/GO.db,
-	 bioc::3.9/org.Hs.eg.db,
+	 
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
