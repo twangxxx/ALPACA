@@ -2,5 +2,26 @@
 
 language: R
 r: bioc-devel
-sudo: false
+sudo: true
 cache: packages
+os:
+- osx
+- linux
+bioc_packages:
+- org.Hs.eg.db
+
+before_install:
+- pip install --user -r requirements.txt
+
+install:
+- Rscript travis_script.r
+
+script:
+- travis_wait R CMD build .
+- travis_wait R CMD check *tar.gz --no-manual
+
+r_packages:
+  - covr
+
+after_success:
+  - Rscript -e 'library(covr); codecov()'
