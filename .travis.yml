@@ -6,7 +6,6 @@ sudo: true
 cache: packages
 os:
 - osx
-- linux
 
 before_install: R -e 'source("https://install-github.me/r-lib/remotes")'
 
